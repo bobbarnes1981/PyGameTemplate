@@ -1,4 +1,4 @@
-# PyGameWaveFunctionCollapse
+# PyGameTemplate
 
 ## Run
 
