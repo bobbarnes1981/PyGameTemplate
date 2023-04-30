@@ -1,6 +1,8 @@
+"""Main module"""
+
 import argparse
 import logging
-import solver
+import application
 
 if __name__ == '__main__':
     loglevels = [
@@ -19,5 +21,5 @@ if __name__ == '__main__':
     loglevel = getattr(logging, args.logging, None)
     logging.basicConfig(level=loglevel, format='%(asctime)s %(levelname)s %(name)s %(message)s')
 
-    a = solver.App(args.delay)
+    a = application.App(args.delay)
     a.on_execute()
